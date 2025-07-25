@@ -14,7 +14,7 @@ main = do
     let b = 5
     
     let c = fromIntegral a / fromIntegral b  -- OK
-    -- let d = a / b  -- Error here
+    -- let d = a / b                         -- Error here
     let d = a `div` b                        -- OK: integer division
 
     print (c)
